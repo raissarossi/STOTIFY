@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>>Stotify Customer Account</title>
+    <link rel="stylesheet" href="styleCustom.css">
+    <link rel="stylesheet" href="styleBarra.css">
+
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+    <script src="https://kit.fontawesome.com/289156b616.js" crossorigin="anonymous"></script>
+
+</head>
+ 
+<body>
+    <div class = "tudo">
+
+        <section class="pattern">
+            <div class="geeks"></div>
+        </section>
+        <div class ="barra">
+            <div class="barraLogo">
+                <a href="index.html"><img src="images/spotifyb.png" alt=""></a>
+                <h2 >Stotify</h2>
+            </div>
+            
+            <div id="header">
+                <ul>
+                    <li><a href="indexSale.html">Sale</a></li>
+                    <li><a href="indexAbout.html">About</a></li>
+                </ul>
+        
+                <div id = "burger" >
+                    <div></div>
+                    <div></div>
+                    <div></div>   
+                </div>
+    
+                
+            </div>
+            <div id = "menu-mobile">
+                <div class = "barraLogo">
+                    <a href="index.html"></a>
+                    <img src="images/spotifyb.png" alt="">
+                    <h2>Stotify</h2>
+                </div>
+                <ul>
+                    <li><a href="indexSale.html">Sale</a></li>
+                    <li><a href="indexAbout.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+         
+        <div class = "container1">
+            <div class = "title">
+                <h2>Wellcome to Stotify Premium Custom!</h2>
+                <span>Here you make the plan.</span>
+            </div>
+            <div class = "perguntas" id="perguntas_cart">
+                <div class = "pessoas">
+                    <span class= "dados">Number of people</span>
+                    <select name="select" id="number_people" onchange="changeNP()">
+                        <option value="0">--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10+</option>
+                    </select>
+                    <div class = "infos">The more people, the lower the price</div>
+                </div>
+                <div class = "infantil">
+                    <span class= "dados">Children's account</span>
+                    <select name="select" id="has_children" onchange="checkChildren()">
+                        <option value="0">--</option>
+                        <option value="1">yes</option>
+                        <option value="2">no</option>
+                    </select>
+                    <div class="number-childrens" id="choice-children">
+                        <span class= "dados">Number of children's account</span>
+                        <select name="select" id="select-children" onchange="selectChildren()"></select>
+                    </div>
+                    
+                    <div class = "infos">It is only possible to switch to a regular account after 6 months.</div>
+                
+                </div>
+                <div class = "podcast">
+                    <span class= "dados">Access to podcasts</span>
+                    <select name="select" id="has_podcast" onchange="checkPodcast()">
+                        <option value="0">--</option>
+                        <option value="1">yes</option>
+                        <option value="2">no</option>
+                    </select>
+                    <div class="number-podcast" id="choice-podcast">
+                        <span class= "dados">Number of podcasts access</span>
+                        <select name="select" id="select-podcast" onchange="selectPodcast()">
+                            <option value="0">--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class = "infos">Child accounts do not have access to podcasts.</div>
+                
+                </div>
+                <div class="limpar" id="limpar">
+                    <a href="indexCustom.html">Clear All</a>
+                </div>
+                
+                <hr class= "linha">
+
+                <div class = "firstCart">
+                    <div class = "valor">
+                        <div id="valor"></div>
+                    </div>
+                    <div class = "carrinho">
+                        <div id="carrinho"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fechar">
+                <a href="#endCart" onclick="closeCart();">Verify purchase</a>
+            </div>
+            
+        </div>  
+        <div class="containers">
+            <div class="container2" id="endCart"></div>
+            <div class="container3" id="total"></div>
+        </div>
+    </div>  
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jsCustom.js"></script>
+    <script src="jsScroll.js"></script>
+    <script src="jsIndex.js"></script>
+</body>
+ 
+</html>

@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+@media screen and (min-width:501px){
+    .barra {
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        align-content: stretch;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .barra img{
+        height: 40px;
+        width: 40px;
+        padding-left: 10px;
+        transform: rotate(175deg);
+    }
+    .barraLogo{ 
+        padding-left:20px;
+        display: flex;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+    #header{
+        justify-content: flex-end;
+        display: flex;
+        height: 100%;
+        width: 90%;
+    }
+    #header a:hover{
+        color: rgb(208, 5, 227);
+    }
+    #burger{
+        padding-right: 20px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-end;
+        cursor: pointer;
+        z-index: 999;
+    }
+    #burger > div{
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all linear .3s;
+    }
+    #burger > div:nth-child(2){
+        width: 25px;
+    }
+    #burger > div:nth-child(3){
+        width: 15px;
+    }
+    :hover#burger > div{
+        width: 37px;
+        height: 3px;
+        background-color: #fff;
+    }
+    #burger.active > div:nth-child(2){
+        opacity: 0;
+    }
+    #burger.active > div:nth-child(1){
+        transform: rotate(45deg) translateY(18px);
+        width: 35px;
+        height: 5px;
+    }
+    #burger.active > div:nth-child(3){
+        transform: rotate(-45deg) translateY(-18px);
+        width: 35px;
+        height: 5px;
+    }
+    #menu-mobile ul, #header ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-around;
+        min-width: 500px;
+    }
+    #menu-mobile ul li a,#header ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    #menu-mobile{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgb(6, 6, 57);
+        width: 100%;
+        height: 200vw;
+        transform: translateX(-120%);
+        transition: all linear .3s;
+    }
+    #menu-mobile.active{
+        transform: translateY(0);
+    }
+    #menu-mobile ul{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 50px;
+        height: 50%;
+        max-height: 350px;
+    }
+    #menu-mobile ul li{
+        background-color: rgba(9,9,121,1);
+        padding: 1.5%;
+        border-bottom: 1px solid #fff;
+        width: 90%;
+    }
+    #menu-mobile .barraLogo{ 
+        padding-top: 10px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #FFF;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    .barra {
+        color: #FFF;
+        background-color: #000;
+        display: flex;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+    .barra img{
+        height: 30px;
+        width: 30px;
+        padding-left: 10px;
+        transform: rotate(175deg);
+    }
+    .barra h2{
+        color: #FFF;
+    }
+    .barraLogo{ 
+        padding-left: 20px;
+        display: flex;
+    }
+
+    #header{
+        justify-content: space-between;
+        display: flex;
+        height: 100%;
+        width: 90%;
+    }
+    #header ul li a{
+        display: none;
+    }
+    #burger{
+        padding-right: 20px;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-end;
+        cursor: pointer;
+        z-index: 999;
+    }
+    #burger > div{
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all linear .3s;
+    }
+    #burger > div:nth-child(2){
+        width: 25px;
+    }
+    #burger > div:nth-child(3){
+        width: 15px;
+    }
+    :hover#burger > div{
+        width: 37px;
+        height: 3px;
+        background-color: #fff;
+    }
+    #burger.active > div:nth-child(2){
+        opacity: 0;
+    }
+    #burger.active > div:nth-child(1){
+        transform: rotate(45deg) translateY(18px);
+        width: 35px;
+        height: 5px;
+    }
+    #burger.active > div:nth-child(3){
+        transform: rotate(-45deg) translateY(-18px);
+        width: 35px;
+        height: 5px;
+    }
+  
+    #menu-mobile{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(to bottom,  #000 0%, rgba(9,9,121,1)  50%, transparent 100%);
+        width: 100vw;
+        height: 200vw;
+        transform: translateX(-100%);
+        transition: all linear .3s;
+    }
+    #menu-mobile.active{
+        transform: translateY(0);
+    }
+    #menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 50px;
+        height: 30%;
+        max-height: 500px;
+    }
+    #menu-mobile ul, #header ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-around;
+        max-width: 500px;
+    }
+    #menu-mobile ul li{
+        background-color: rgba(9,9,121,1);
+        padding: 1.5%;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+    }
+    #menu-mobile ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+    #menu-mobile .barraLogo{ 
+        padding-top: 15px;
+        display: flex;
+        color: #FFF;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

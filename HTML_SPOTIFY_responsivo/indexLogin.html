@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stotify Login</title>
+
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="styleLogin.css">
+    <script src="https://kit.fontawesome.com/289156b616.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class = "barra">
+        <a href="index.html">
+        <img src="images/spotifyp.png" alt="">
+        </a>
+        <h2>Stotify</h2>
+    </div>
+    <div class = "containerTodo">
+        <div class = "container01">
+            <div class = "continuar">
+                
+                <div class="link01" id="nots" onclick="alertF()">
+                        <a href="javascript:void">CONTINUE WITH FACEBOOK</a>
+                </div>
+                <div class ="link02" id="nots" onclick="alertA()">
+                        <a href="javascript:void">CONTINUE WITH APPLE</a>
+                </div>
+                <div class ="link03" id="nots" onclick="alertG()">
+                        <a href="javascript:void">CONTINUE WITH GOOGLE</a>
+                </div>
+                <div class ="link04" id="nots" onclick="alertNum()">
+                        <a href="javascript:void">CONTINUE WITH PHONE NUMBER</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class = "container02">
+            <hr class="linha">
+            <span class= "divisao">OR</span>
+            <hr class="linha">
+        </div>
+        <div class = "container03">
+            <span class= "dados">Email address or username</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="Email address or username" data-testid="login-username"
+            autocapitalize="off" class="input1" value="">
+            <span class= "dados">Password</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="Password" data-testid="login-username"
+            autocapitalize="off" class="input2" value="">
+            <div class ="link05">
+                <a href="indexLogin.html">Forgot password</a>
+            </div>
+            <div class = "minicontainer">
+                <form action="/action_page.php">
+                    <input type="checkbox" id="true" name="check" value="remind"
+                    class="fa-solid fa-check">
+                    <label for="check">Remind me</label><br>
+                </form>
+                <div class ="link06">
+                    <a href="indexLogin.html">BEGIN SESSION</a>
+                </div>
+            </div>
+            <hr class="linha">
+        </div>
+        <div class ="container04">
+            <span class= "semCad">Don't have an account?</span>
+        </div>
+        <div class ="link07">
+            <a href="indexRegister.html">REGISTER ON STOTIFY</a>
+        </div>
+    </div>
+    <script src="jsLogin.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jsIndex.js"></script>
+</body>
+</html>

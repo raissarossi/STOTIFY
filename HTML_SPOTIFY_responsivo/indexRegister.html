@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Stotify Register on Stotify</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <script src="https://kit.fontawesome.com/289156b616.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "barra">
+        <a href="index.html">
+        <img src="images/spotifyp.png" alt="">
+        </a>
+        <h2>Stotify</h2>
+    </div>
+    <div class = "containerTodo">
+        <div class = "container01">
+            <div class = "continuar">
+                
+                <div class="link01" id="nots" onclick="swaal()">
+                        <a href="indexLogin.html">CONTINUE WITH FACEBOOK</a>
+                </div>
+                <div class ="link02">
+                        <a href="indexLogin.html">CONTINUE WITH APPLE</a>
+                </div>
+                <div class ="link03">
+                        <a href="indexLogin.html">CONTINUE WITH GOOGLE</a>
+                </div>
+                <div class ="link04">
+                        <a href="indexLogin.html">CONTINUE WITH PHONE NUMBER</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class = "container02">
+            <hr class="linha">
+            <span class= "divisao">OR</span>
+            <hr class="linha">
+        </div>
+        <div class = "container03">
+            <span class= "dados">National ID card number</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="National ID card number" data-testid="login-username"
+            autocapitalize="off" class="input2" value="">
+
+            <span class= "dados">Phone number</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="Phone number" data-testid="login-username"
+            autocapitalize="off" class="input1" value="">
+
+            <span class= "dados">Email address or username</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="Email address or username" data-testid="login-username"
+            autocapitalize="off" class="input1" value="">
+
+            <span class= "dados">Password</span>
+            <input aria-invalid="false" id="login-username" type="text"
+            placeholder="Password" data-testid="login-username"
+            autocapitalize="off" class="input2" value="">
+
+            <div class = "birthDate">
+                <span class= "dados">Month</span>
+                    <select name="select" id="number_people" onchange="changeNP()">
+                        <option value="0">--</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <span class= "dados">Day</span>
+                    <select name="select" id="number_people" onchange="changeNP()">
+                        <option value="0">--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        
+                    </select>
+            </div>
+            
+            <div class ="link05">
+                <a href="indexLogin.html">Forgot password</a>
+            </div>
+            <div class = "minicontainer">
+                <form action="/action_page.php">
+                    <input type="checkbox" id="true" name="check" value="remind"
+                    class="fa-solid fa-check">
+                    <label for="check">Remind me</label><br>
+                </form>
+                <div class ="link06">
+                    <a href="indexLogin.html">START SESSION</a>
+                </div>
+            </div>
+            <hr class="linha">
+        
+    </div>
+    <script src="jsLogin.js"></script>
+    <script src="jsIndex.js"></script>
+</body>
+</html>
